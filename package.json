@@ -1,0 +1,12 @@
+{
+  "name": "kuvo-to-mixcloud-text",
+  "version": "1.0.0",
+  "description": "Parse Rekordbox's Kuvo .txt output to something that can be pasted into Mixcloud tracklists",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ola Christian Gundelsby <lug00ber@gmail.com> (https://github.com/gundelsby)",
+  "license": "MIT"
+}
