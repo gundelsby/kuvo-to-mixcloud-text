@@ -5,7 +5,11 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "node .",
+		"lint": "eslint . --ext .js",
+		"lint:fix": "npm run lint -- --fix",
+		"test": "mocha \"./{,!(node_modules)/**/}*-test.js\"",
+		"test:watch": "npm run test -- -w --reporter min"
 	},
 	"author": "Ola Christian Gundelsby <lug00ber@gmail.com> (https://github.com/gundelsby)",
 	"license": "MIT",
@@ -20,6 +24,7 @@
 		]
 	},
 	"devDependencies": {
+		"@sinonjs/referee": "^5.0.1",
 		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.10.0",
 		"eslint-plugin-prettier": "^3.1.2",
