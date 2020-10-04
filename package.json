@@ -9,7 +9,8 @@
 		"lint": "eslint . --ext .js",
 		"lint:fix": "npm run lint -- --fix",
 		"test": "mocha \"./{,!(node_modules)/**/}*-test.js\"",
-		"test:watch": "npm run test -- -w --reporter min"
+		"test:watch": "npm run test -- -w --reporter min",
+		"build": "nexe -o ./bin/kuvo-to-mixcloud-text index.js"
 	},
 	"author": "Ola Christian Gundelsby <lug00ber@gmail.com> (https://github.com/gundelsby)",
 	"license": "MIT",
@@ -32,6 +33,7 @@
 		"husky": "^4.2.3",
 		"lint-staged": "^10.0.8",
 		"mocha": "^7.1.0",
+		"nexe": "^3.3.7",
 		"prettier": "^1.19.1"
 	}
 }
